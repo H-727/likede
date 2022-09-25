@@ -1,5 +1,5 @@
 <template>
-  <div :class="classObj" class="app-wrapper">
+  <div>
     <navbar />
     <div class="content">
       <sidebar class="sidebar-container" />

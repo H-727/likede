@@ -1,5 +1,7 @@
 <template>
-  <router-view :key="key" />
+  <div id="app-main">
+    主页
+  </div>
 </template>
 
 <script>
@@ -13,24 +15,14 @@ export default {
 }
 </script>
 
-<style scoped>
-.app-main {
+<style lang="scss" scoped>
+#app-main {
   /*50 = navbar  */
   min-height: calc(100vh - 60px);
-  width: 100%;
   position: relative;
   overflow: hidden;
-}
-.fixed-header+.app-main {
-  padding-top: 50px;
+  flex: 1;
+  background-color: #f8fafd;
 }
 </style>
 
-<style lang="scss">
-// fix css style bug in open el-dialog
-.el-popup-parent--hidden {
-  .fixed-header {
-    padding-right: 15px;
-  }
-}
-</style>

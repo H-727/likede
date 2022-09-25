@@ -1,0 +1,72 @@
+{
+  "id": "3670967",
+  "name": "dikede",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1068850",
+      "name": "拼图－互动",
+      "font_class": "shangpin",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "1517680",
+      "name": "定位",
+      "font_class": "dianwei",
+      "unicode": "e655",
+      "unicode_decimal": 58965
+    },
+    {
+      "icon_id": "2570148",
+      "name": "账单",
+      "font_class": "duizhang",
+      "unicode": "e66a",
+      "unicode_decimal": 58986
+    },
+    {
+      "icon_id": "8718255",
+      "name": "房子",
+      "font_class": "home",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "9148800",
+      "name": "订单",
+      "font_class": "dingdan",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "12797041",
+      "name": "订单",
+      "font_class": "gongdan",
+      "unicode": "e63f",
+      "unicode_decimal": 58943
+    },
+    {
+      "icon_id": "12820178",
+      "name": "人员管理",
+      "font_class": "renyuan",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
+      "icon_id": "13672652",
+      "name": "充电桩",
+      "font_class": "shebei",
+      "unicode": "e672",
+      "unicode_decimal": 58994
+    },
+    {
+      "icon_id": "15815698",
+      "name": "电灯-灯泡-照明",
+      "font_class": "celue",
+      "unicode": "e78e",
+      "unicode_decimal": 59278
+    }
+  ]
+}
