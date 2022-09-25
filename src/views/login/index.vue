@@ -155,14 +155,7 @@ body{
   -webkit-font-smoothing: antialiased;
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Arial,sans-serif;
 }
-.logo{
-  width: 96px;
-  height: 96px;
-  position: absolute;
-  left: 50%;
-  top: 0;
-  transform: translate(-50%,-50%);
-}
+
 /* reset element-ui css */
 .login-container {
   .el-input {
@@ -199,7 +192,14 @@ body{
 $bg:#2d3a4b;
 $dark_gray:#889aa4;
 $light_gray:#eee;
-
+.logo{
+  width: 96px;
+  height: 96px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%,-50%);
+}
 .login-container {
   position: relative;
   min-height: 100%;

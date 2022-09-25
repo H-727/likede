@@ -2,15 +2,22 @@
   <div class="navbar">
     <div class="logo"><img src="@/assets/logo/logoone.png" alt=""></div>
     <el-row class="userinfo">
-      <el-col :span="5"><img src="" alt=""><div class="grid-content bg-purple-dark" /></el-col>
-      <el-col :span="14">2<div class="grid-content bg-purple-dark" /></el-col>
-      <el-col :span="5">3<div class="grid-content bg-purple-dark" /></el-col>
+      <el-col style="height:35px;" :span="5"><img src="@/assets/images/user.png" alt=""></el-col>
+      <el-col :span="14">欢迎您，{{ $store.state.user.data.userName }}</el-col>
+      <el-col style="cursor: pointer;" :span="5"><div @click="logout">退出<i class="el-icon-caret-bottom" /></div></el-col>
     </el-row>
   </div>
 </template>
 
 <script>
 export default {
+  methods: {
+    logout() {
+      this.$store.commit('user/SET_TOKEN', '')
+      this.$store.commit('user/SET_DATA', {})
+      this.$router.push('/login')
+    }
+  }
 }
 </script>
 
@@ -37,6 +44,7 @@ export default {
     width: 240px;
     display: flex;
     align-items: center;
+    color:#fff;
   }
 }
 </style>
