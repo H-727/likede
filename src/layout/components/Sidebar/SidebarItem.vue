@@ -1,30 +1,25 @@
 <template>
-  <el-submenu v-if="!!value.children" :index="sum">
-    <template slot="title">
-      <i :class="'iconfont icon-'+value.icon" />
-      <span>{{ value.title }}</span>
-    </template>
-    <el-menu-item v-for="(item,index) in value.children" :key="item" :index="`${sum}-${index+1}`">{{ item }}</el-menu-item>
-  </el-submenu>
-  <el-menu-item v-else :index="sum">
-    <i :class="'iconfont icon-'+value.icon" />
-    <span slot="title">{{ value.title }}</span>
+  <el-menu-item v-if="obj.children.length === 1" :index="obj.children[0].path">
+    <i :class="'iconfont icon-'+obj.children[0].meta.icon" />
+    <span slot="title">{{ obj.children[0].meta.title }}</span>
   </el-menu-item>
+  <el-submenu v-else :index="obj.path">
+    <template slot="title">
+      <i :class="'iconfont icon-'+obj.meta.icon" />
+      <span>{{ obj.meta.title }}</span>
+    </template>
+    <el-menu-item v-for="(item) in obj.children" :key="item.path" :index="item.path">{{ item.meta.title }}</el-menu-item>
+  </el-submenu>
 </template>
 
 <script>
 export default {
   props: {
-    value: {
+    obj: {
       type: Object,
-      required: true
-    },
-    sum: {
-      type: Number,
       required: true
     }
   }
-
 }
 </script>
 

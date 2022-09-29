@@ -16,8 +16,7 @@ const store = new Vuex.Store({
   },
   getters,
   plugins: [createPersistedState({
-    paths: ['user.token', 'user.data']
+    paths: ['user.token']
   })]
 })
-
 export default store

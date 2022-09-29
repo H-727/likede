@@ -15,13 +15,24 @@
     width: 167px !important;
     z-index: 1001;
     overflow: auto;
+    &::-webkit-scrollbar {
+      height: 7px;
+      width: 7px;
+    }
+    ::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background: #4B5563;
+    }
     .el-menu{
+      width: 160px;
+    overflow: hidden;
     border: none;
     }
   .is-active{
       color: #409EFF !important;
     }
     .el-submenu__title{
+      padding: 0 0 0 20px;
       color:inherit;
       i{
         color:inherit;
@@ -31,8 +42,8 @@
       background-color: #fff;
     }
     .el-submenu .el-menu-item{
-      min-width:167px;
-      padding:0 0 0 51px !important;
+      min-width: 160px;
+      padding:0 45px 0 51px !important;
     }
     .el-menu-item{
       background-color: #fff !important;

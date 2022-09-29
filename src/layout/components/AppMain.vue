@@ -1,23 +1,19 @@
 <template>
   <div id="app-main">
-    主页
+    <router-view />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'AppMain',
-  computed: {
-    key() {
-      return this.$route.path
-    }
-  }
+  name: 'AppMain'
 }
 </script>
 
 <style lang="scss" scoped>
 #app-main {
   /*50 = navbar  */
+  padding: 20px;
   min-height: calc(100vh - 60px);
   position: relative;
   overflow: hidden;
